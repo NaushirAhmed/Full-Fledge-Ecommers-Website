@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+  font-optical-sizing: auto;
+}
+
+::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8px !important;  
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+.container {
+    width:95%;
+    margin:auto;
+}
+.link:hover{
+      color: rgb(222, 75, 21);
+      transition: all;
+}
+.MuiBadge-badge{
+  background-color:  #8E8F8F !important;
+}
+.nav{
+  border-top: 1px solid rgb(211, 211, 211);
+}
+.category Button{
+    text-transform: capitalize !important;
+}
+
+ .SliderHome{
+  overflow: inherit !important;
+ }
+
+ .BestProItem .action Button:hover svg{
+  color: white !important;
+ }
+ .BestProItem .action Button svg{
+  pointer-events: none !important;
+ }
+ .swiper-button-prev,.swiper-button-next{
+  display: flex  ;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #fff;
+  border-radius: 100%;
+  color: black !important;
+  width: 40px !important;
+  height:40px !important;
+  min-width: 40px;
+  box-shadow: 0 1px 3px  #0000001f 0 1px 2px #0000003d !important;
+ }
+
+  .swiper-button-prev svg,.swiper-button-next svg{
+   width: 20px !important;
+   height: 20px !important;
+  }
+
+  .MuiCheckbox-root{
+    padding: 4px !important;
+  }
+  .MuiTypography-root{
+    font-size: 14px !important;
+  }
+.sidebar .scroll{
+  padding-left: 5px;
+  width: 200px;
+  max-height:200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.sidebar .scroll::-webkit-scrollbar{
+  width: 2px !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+.range-slider .range-slider__thumb{
+  width: 14px !important;
+  height: 14px !important;
+  background: gray !important;
+}
+.range-slider{
+  height: 4px !important;
+  width: 96% !important;
+}
+.range-slider .range-slider__range{
+  background: gray !important;
+}
+.listaction button.active svg{
+   color : orangered !important;
+   opacity: 1;
+}
+.MuiTypography-root{
+  text-decoration-color:black !important ;
+}
+.iiz{
+   border-radius:20px ;
+}
+.cartpanel .MuiPaper-root{
+  width: 370px;
+  overflow: hidden;
+}
+#size-menu .MuiButtonBase-root{
+  font-size:12px !important;
+}
+
+.otpBox input{
+  border: 1px solid black !important;
+  outline: none !important;
+  border-radius: 4px;
+
+}
+.otpBox input:focus{
+  border: 1px solid rgba(0, 0, 0,0.7) !important;
+}
+.otpPage.container{
+  height:90vh;
+  display: flex;
+}
+
+.scroll::-webkit-scrollbar{
+  width: 2px !important;
+}
+
+#account-menu .MuiPaper-root{
+  width: 200px;
+}
+.myaccount li a{
+  position:relative;
+  display: block;
+}
+.myaccount li a::before{
+  content:"";
+  width: 3px;
+  height: 50%;
+  position:absolute;
+  top: 50%;
+  left: 0;
+  background: rgb(199, 61, 61);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.myaccount li a.active::before{
+  height: 100%;
+  opacity: 1;
+  top: 0px;
+}
+.myaccount li a.active button svg{
+  color:rgb(199, 61, 61) !important;
+  opacity:1 !important;
+
+}
